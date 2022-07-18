@@ -1,44 +1,42 @@
-name: 🚀 New feature proposal
-description: Propose a new feature
+name: 🚀 Ny funktion
+description: Har du en idé eller saknar någon funktion
 labels: [enhancement]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for your interest in the project and taking the time to fill out this feature report!
+        Tack för ditt intresse för projektet och att du tog dig tid att fylla i denna funktionsrapport!
   - type: textarea
     id: feature-description
     attributes:
-      label: Clear and concise description of the problem
-      description: 'As a developer using VueUse I want [goal / wish] so that [benefit]. If you intend to submit a PR for this issue, tell us in the description. Thanks!'
+      label: Tydlig och kortfattad beskrivning av problemet
+      description: 'Som en användare av applikationen skulle jag vilja kunna [önskning] för att [fördel/mål]'
     validations:
       required: true
   - type: textarea
     id: suggested-solution
     attributes:
-      label: Suggested solution
-      description: 'In module [xy] we could provide following implementation...'
+      label: Föreslagen lösning
+      description: 'På sidan [xy] kan vi tillhandahålla följande implementering...'
     validations:
       required: true
   - type: textarea
     id: alternative
     attributes:
-      label: Alternative
-      description: Clear and concise description of any alternative solutions or features you've considered.
+      label: Alternativ
+      description: Tydlig och koncis beskrivning av eventuella alternativa lösningar eller funktioner du har övervägt.
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional context
-      description: Any other context or screenshots about the feature request here.
+      label: Ytterligare information
+      description: Eventuellt annat information eller skärmdumpar om funktionsbegäran här.
   - type: checkboxes
     id: checkboxes
     attributes:
-      label: Validations
-      description: Before submitting the issue, please make sure you do the following
+      label: Bekräftelser
+      description: Se till att du gör följande innan du skickar in din begäran
       options:
-        - label: Follow our [Code of Conduct](https://github.com/antfu/.github/blob/main/CODE_OF_CONDUCT.md)
+        - label: Följ vår [uppförandekod](https://github.com/bjorkgard/.github/blob/main/CODE_OF_CONDUCT.md)
           required: true
-        - label: Read the [Contributing Guide](https://github.com/antfu/contribute).
-          required: true
-        - label: Check that there isn't already an issue that request the same feature to avoid creating a duplicate.
+        - label: Kontrollera att det inte redan finns en förfrågan som begär samma funktion för att undvika att skapa en dubblett.
           required: true
