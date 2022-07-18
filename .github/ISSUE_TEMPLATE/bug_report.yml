@@ -1,62 +1,56 @@
-name: 🐞 Bug report
-description: Report an issue
+name: 🐞 Rapportera ett fel
+description: Skapa en rapport för att hjälpa oss att rätta till felet.
 labels: [pending triage]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Tack för att du tar dig tid att fylla i den här felrapporten!
   - type: textarea
     id: bug-description
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is. If you intend to submit a PR for this issue, tell us in the description. Thanks!
-      placeholder: Bug description
+      label: Beskriv felet
+      description: En tydlig och kortfattad beskrivning av vad felet är. Om du tänker skicka in en PR för det här problemet, berätta för oss i beskrivningen. Tack!
+      placeholder: Beskrivning
     validations:
       required: true
   - type: input
     id: reproduction
     attributes:
-      label: Reproduction
-      description: A [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) is **required**, otherwise the issue might be closed without further notice. [**Why & How?**](https://antfu.me/posts/why-reproductions-are-required)
-      placeholder: Reproduction
+      label: Hur uppstår felet
+      description: En [minimal beskrivning](https://stackoverflow.com/help/minimal-reproducible-example) är **obligatorisk**, annars kan problemet avslutas utan ytterligare meddelande. [**Varför och hur?**](https://antfu.me/posts/why-reproductions-are-required)
+      placeholder: Beskrivning
     validations:
       required: true
   - type: textarea
     id: system-info
     attributes:
-      label: System Info
-      description: Output of `npx envinfo --system --binaries --browsers`
+      label: Systeminformation
+      description: Om du har möjlighet kan du skriva följande kommando i terminalen på din dator: `npx envinfo --system --binaries --browsers` och klistra in resultatet
       render: Shell
-      placeholder: System, Binaries, Browsers
+      placeholder: Operativsystem, Webbläsare mm
     validations:
       required: true
-  - type: dropdown
-    id: package-manager
+  - type: textarea
+    id: other
     attributes:
-      label: Used Package Manager
-      description: Select the used package manager
-      options:
-        - npm
-        - yarn
-        - pnpm
-        - bun
-        - n/a
+      label: Övrig information
+      description: Fyll i annan information som kan vara bra att känna till för att fixa felet
+      render: Shell
+      placeholder: Övrigt...
     validations:
-      required: true
+      required: false
   - type: checkboxes
     id: checkboxes
     attributes:
-      label: Validations
-      description: Before submitting the issue, please make sure you do the following
+      label: Bekräftelser
+      description: Se till att du gör följande innan du skickar in problemet
       options:
-        - label: Follow our [Code of Conduct](https://github.com/antfu/.github/blob/main/CODE_OF_CONDUCT.md)
+        - label: Följ vår [uppförandekod](https://github.com/antfu/.github/blob/main/CODE_OF_CONDUCT.md).
           required: true
-        - label: Read the [Contributing Guide](https://github.com/antfu/contribute).
+        - label: Kontrollera att det inte redan finns ett problem som rapporterar samma bugg för att undvika att skapa en dubblett.
           required: true
-        - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
+        - label: Kontrollera att detta är en konkret bugg. För frågor och svar, öppna en GitHub-diskussion istället.
           required: true
-        - label: Check that this is a concrete bug. For Q&A, please open a GitHub Discussion instead.
-          required: true
-        - label: The provided reproduction is a [minimal reproducible](https://stackoverflow.com/help/minimal-reproducible-example) of the bug.
+        - label: Beskrivningen är en komplett beskrivning hur felet uppstår.
           required: true
