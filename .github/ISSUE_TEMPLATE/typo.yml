@@ -1,15 +1,14 @@
-name: 👀 Typo / Grammar fix
-description: You can just go ahead and send a PR! Thank you!
+name: 👀 Felstavningar / översättning
+description: Vill du hjälpa till med att fixa stavfel eller översätta applikationen så är du välkommen!
 labels: []
 body:
   - type: markdown
     attributes:
       value: |
-        ## PR Welcome!
-
-        If the typo / grammar issue is trivial and straightforward, you can help by **directly sending a quick pull request**!
-        If you spot multiple of them, we suggest combining them into a single PR. Thanks!
+        All textbearbetning sker utanför applikationen i en webbbaserad miljö. Vill du vara med och hjälpa till med textjusteringar eller översätta applikationen till andra språk är du välkommen att kontakta utvecklarna för att få tillgång till texterna.
+        
+        Om du istället bara vill rapportera in ett textfel kan du göra det i textfältet nedan. 
   - type: textarea
     id: context
     attributes:
-      label: Additional context
+      label: Information
