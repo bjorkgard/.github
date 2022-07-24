@@ -1,6 +1,6 @@
 name: 🚀 Ny funktion
 description: Har du en idé eller saknar någon funktion
-labels: [enhancement]
+labels: [feature request]
 body:
   - type: markdown
     attributes:
