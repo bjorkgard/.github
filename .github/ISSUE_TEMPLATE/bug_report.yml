@@ -1,6 +1,6 @@
 name: 🐞 Rapportera ett fel
 description: Skapa en rapport för att hjälpa oss att rätta till felet.
-labels: [pending triage]
+labels: 'bug'
 body:
   - type: markdown
     attributes:
